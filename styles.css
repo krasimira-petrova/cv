@@ -1,0 +1,18 @@
+html {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+}
+
+body {
+    text-align: center;
+}
+
+#wrapper {
+    width: 980px;
+    height: 1350px;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: left;
+    border: 1px solid black;
+    background-image: url("./images/cover.png");
+}
