@@ -16,3 +16,34 @@ body {
     border: 1px solid black;
     background-image: url("./images/cover.png");
 }
+
+#photo-krasi {
+    border-radius: 20px;
+    border: 2px solid black;
+    float: right;
+    margin: 20px 30px;
+    width: 190px;
+    overflow: hidden;
+}
+
+#photo-krasi img {
+    width: 100%;
+    display: block;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 20px;
+    height: 324px;
+    border: 2px solid black;
+    clear: both;
+    margin: 20px 30px;
+}
+
+section:first-of-type {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+section:last-of-type {
+    background-color: rgba(255, 255, 255, 0.7);
+}
