@@ -23,6 +23,16 @@ header:after {
     clear: both;
 }
 
+#name {
+    float: left;
+    text-align: center;
+    margin: 50px;
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid black;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
 #photo-krasi {
     border-radius: 20px;
     border: 2px solid black;
@@ -44,12 +54,12 @@ section {
     border: 2px solid black;
     clear: both;
     margin: 20px 30px;
-    padding: 0 20px;
+    padding: 10px 20px;
     clear: both;
 }
 
 section:first-of-type {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 
 section:last-of-type {
@@ -62,6 +72,6 @@ section:last-of-type {
 }
 
 .information a {
-    color: green;
+    color: rgb(51, 51, 0);
 }
 
