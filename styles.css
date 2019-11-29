@@ -1,61 +1,67 @@
-html {
-    font-family: Arial, sans-serif;
-    font-style: italic;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body {
-    text-align: center;
+html {
+    font: 16px/1.5 'Verdana', sans-serif;
+}
+
+body, form, input, button, select, option {
+    font: inherit;
 }
 
 #wrapper {
-    width: 980px;
-    height: 1350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 60em;
     margin: 0 auto;
-    padding: 15px 0;
     text-align: left;
     border: 1px solid black;
-    background-image: url("./images/cover.png");
+    background-image: url("https://source.unsplash.com/hJ51X8nUtTk");
 }
 
-header:after {
-    display: block;
-    content: "";
-    clear: both;
-}
-
-#name {
-    float: left;
+.name {
     text-align: center;
-    margin: 50px;
-    padding: 10px;
-    border-radius: 20px;
-    border: 2px solid black;
+    margin: 5em;
+    padding: 2em;
+    border-radius: 1em;
+    border: 0.1em solid black;
     background-color: rgba(255, 255, 255, 0.6);
-}
-
-#photo-krasi {
-    border-radius: 20px;
-    border: 2px solid black;
-    float: right;
-    margin: 20px 30px;
-    width: 190px;
-    overflow: hidden;
-}
-
-#photo-krasi img {
-    width: 100%;
-    display: block;
 }
 
 section {
     background-color: rgba(255, 255, 255, 0.6);
-    border-radius: 20px;
-    min-height: 300px;
-    border: 2px solid black;
-    clear: both;
-    margin: 20px 30px;
-    padding: 10px 20px;
-    clear: both;
+    border-radius: 1em;
+    border: 0.1em solid black;
+    margin: 2em;
+    padding: 5em;
+    transform: translate(-5em, 0);
+    opacity: 0;
+    transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+}
+
+section:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+section:nth-child(2) {
+    transition-delay: 0.3s;
+}
+
+section:nth-child(3) {
+    transition-delay: 0.5s;
+}
+
+section:nth-child(4) {
+    transition-delay: 0.7s;
+}
+
+.loaded section {
+    opacity: 1;
+    transform: translate(0, 0);
 }
 
 section:first-of-type {
@@ -66,12 +72,14 @@ section:last-of-type {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
+.second_row {
+    display: flex;
+}
+
 .information {
-    float: left;
     width: 50%;
 }
 
 .information a {
     color: rgb(51, 51, 0);
 }
-

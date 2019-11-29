@@ -4,20 +4,22 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="./styles.css">
+    <script>
+        window.addEventListener('load', (event) => {
+            document.querySelector('body').classList.add('loaded');
+        });
+    </script>
     <title>Who am I</title>
 </head>
 
 <body>
     <div id="wrapper">
         <header>
-            <div id="name">
+            <section class="name">
                 <h1>Krasimira Petrova</h1>
-            </div>
-            <div id="photo-krasi">
-                <img src="./images/krasi.jpg">
-            </div>
+            </section>
         </header>
-        <section>
+        <section class="first_row">
             <h2>Short History</h2>
             <p>Hello to everyone! My name is Krasimira Petrova and I want to work as a front-end developer.
                 I have studied law but after spending a couple of years in the field I have decided to take a new
@@ -34,7 +36,7 @@
                 I am looking for front-end job opportunities and I hope to find my place soon!
             </p>
         </section>
-        <section>
+        <section class="second_row">
             <div class="information">
                 <h2>Personal Information</h2>
                 <ul>
@@ -58,11 +60,11 @@
                             </li>
                         </ul>
                     </li>
-					<li>Rails Girls Sofia Study Group
+                    <li>Rails Girls Sofia Study Group
                         <ul>
                             <li>HTML5, CSS3, JavaScript
                                 <ul>
-                                    <li>25/10/2018 - now</li>
+                                    <li>25/10/2018 - 29/08/2019</li>
                                 </ul>
                             </li>
                         </ul>
@@ -79,18 +81,25 @@
                                     <li>13/05/2019 - 03/06/2019</li>
                                 </ul>
                             </li>
+                            <li>CSS Advanced
+                                <ul>
+                                    <li>04/11/2019 - 15/12/2019</li>
+                                </ul>
+                            </li>
                         </ul>
                     </li>
                 </ul>
             </div>
         </section>
-        <section>
+        <section class="third_row">
             <h2>Skills</h2>
             <ul>
-                <li>HTML5.
+                <li>HTML5.</li>
                 <li>CSS3.</li>
+                <li>Sass.</li>
                 <li>JavaScript.</li>
                 <li>Bootstrap.</li>
+                <li>JQuery.</li>
                 <li>Able to create responsive solutions.</li>
                 <li>Able to work with version control systems.</li>
                 <li>Knowledge in standard tools used in graphic editing and front-end development.</li>
