@@ -25,11 +25,33 @@ body, form, input, button, select, option {
 
 .name {
     text-align: center;
-    margin: 5em;
+    margin: 4em;
     padding: 2em;
     border-radius: 1em;
     border: 0.1em solid black;
     background-color: rgba(255, 255, 255, 0.6);
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    margin-left: 4em;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0.5em 1em;
+    color: #444;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+
+nav a:hover, nav li.current-page a {
+    color: #fff;
 }
 
 section {
@@ -72,12 +94,16 @@ section:last-of-type {
     background-color: rgba(255, 255, 255, 0.7);
 }
 
-.second_row {
+#second_row {
     display: flex;
 }
 
 .information {
     width: 50%;
+}
+
+.information li {
+    margin-left: 1.1em;
 }
 
 .information a {
