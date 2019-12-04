@@ -98,6 +98,14 @@ section:last-of-type {
     display: flex;
 }
 
+#second_row ul {
+    padding: 0 1em;
+}
+
+#third_row ul {
+    padding: 0 2em;
+}
+
 .information {
     width: 50%;
 }
